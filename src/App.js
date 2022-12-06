@@ -43,6 +43,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<RedirectHome/>} />
+        <Route path="/portfolio" element={<RedirectHome/>} />
         <Route path="/home" element={<Homescreen/>} />
         <Route path="/musk-money" element={<MoneyGame/>} />
         <Route path="*" element={<PageNotFound/>} />
