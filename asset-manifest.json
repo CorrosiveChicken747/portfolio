@@ -1,15 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.30aad93b.css",
-    "main.js": "/portfolio/static/js/main.dcd43ad2.js",
-    "static/media/headshot.png": "/portfolio/static/media/headshot.000874c5ceb57394a148.png",
+    "main.css": "/portfolio/static/css/main.5683d7d3.css",
+    "main.js": "/portfolio/static/js/main.ca1ede4a.js",
+    "static/media/lisa_headshot.png": "/portfolio/static/media/lisa_headshot.000874c5ceb57394a148.png",
+    "static/media/bill.jpg": "/portfolio/static/media/bill.3dff15fe66aa445857b0.jpg",
+    "static/media/hair.jpg": "/portfolio/static/media/hair.d9222b6acfa49f21bc0d.jpg",
+    "static/media/groceries.jpg": "/portfolio/static/media/groceries.66aaaeb4543aeafd0b2e.jpg",
+    "static/media/models.png": "/portfolio/static/media/models.6905852e3fd8744cbe9f.png",
+    "static/media/textbooks.jpg": "/portfolio/static/media/textbooks.05b54ab6fdebfec89918.jpg",
+    "static/media/jet.jpg": "/portfolio/static/media/jet.e15eddbcd7bbda306d8a.jpg",
+    "static/media/mbp.jpg": "/portfolio/static/media/mbp.065985456a250e8d1be0.jpg",
+    "static/media/hawaii.jpg": "/portfolio/static/media/hawaii.497b662fa7436c74052c.jpg",
+    "static/media/insulin.jpg": "/portfolio/static/media/insulin.1d2f1cd8a827fd84db2b.jpg",
+    "static/media/videogame.jpg": "/portfolio/static/media/videogame.33b1fcca6720d83a199f.jpg",
+    "static/media/rent.jpg": "/portfolio/static/media/rent.3c6db09964cc9fb649ae.jpg",
+    "static/media/brown.png": "/portfolio/static/media/brown.f5b5409fc0bb7cbaf65e.png",
+    "static/media/placeholder.jpg": "/portfolio/static/media/placeholder.bc91dcb7793a52f6e44f.jpg",
+    "static/media/movie.png": "/portfolio/static/media/movie.39ab86d89b141b418dd7.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.30aad93b.css.map": "/portfolio/static/css/main.30aad93b.css.map",
-    "main.dcd43ad2.js.map": "/portfolio/static/js/main.dcd43ad2.js.map"
+    "main.5683d7d3.css.map": "/portfolio/static/css/main.5683d7d3.css.map",
+    "main.ca1ede4a.js.map": "/portfolio/static/js/main.ca1ede4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.30aad93b.css",
-    "static/js/main.dcd43ad2.js"
+    "static/css/main.5683d7d3.css",
+    "static/js/main.ca1ede4a.js"
   ]
 }
