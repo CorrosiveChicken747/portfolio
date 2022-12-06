@@ -1,0 +1,20 @@
+body {
+    background-color: #e0e0e0;
+}
+
+.MoneyHeader {
+    background-color: rgb(20, 27, 27);
+    min-width: 100%;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.ShoppingArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start
+}

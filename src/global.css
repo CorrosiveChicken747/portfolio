@@ -55,3 +55,51 @@
 .twitch-hover:hover {
     transform: rotate(8deg);
 }
+
+.tilt {
+    transform-style: preserve-3d;
+    transform: rotateX(0) rotateY(0);
+    transition: transform 0.5s;
+}
+  
+.tilt:hover {
+    transform: rotateX(15deg) rotateY(15deg);
+}
+
+.vspace {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.vspace-pad {
+    padding-top: 10px;
+}
+
+.vspace-vh {
+    margin-top: 5vh;
+}
+
+.centered-text {
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+}
+
+.vline {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: stretch;
+}
+
+.hline {
+    border-top: 1px dashed black;
+    margin: 5px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    align-self: stretch;
+}
+  
+  

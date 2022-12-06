@@ -1,0 +1,25 @@
+.tile {
+    margin: 1vw;
+    width: 25vw;
+    height: 25vw;
+    background: grey;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    border: 15px solid white;
+}
+
+.tile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 70vw;
+    margin: auto;
+}

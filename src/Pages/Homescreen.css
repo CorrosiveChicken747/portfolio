@@ -1,63 +1,42 @@
 .Homescreen {
     overflow-y: auto;
     overflow-x: hidden;
-  }
-  
-  .landing{
-    height: 105vh;
-  }
-  
-  .mobile-landing {
-    width: 100vw;
-    height: 100vh;
+}
+
+.landing{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-  }
-  
-  .landing-about {
+    margin-top: 12vh;
+}
+
+.landing-about {
     width: 55vw;
-    height: 90vh;
-    position: absolute;
-    top: 55%; left: 50%;
-    transform: translate(-50%,-50%);
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .landing-picture-hello {
+.landing-picture-hello {
     width: 100%;
     flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
+}
   
-  .profilepic {
+.profilepic {
     width: 18vw;
-    height: 18vw;
     border-radius: 20%;
     flex: 1;
-  }
-  
-  .mobile-profilepic {
-    min-width: 60vw;
-    min-height: 60vw;
-    max-width: 60vw;
-    max-height: 60vw;
-    border-radius: 20%;
-    margin-top: 5vw;
-    flex: 1;
-  }
-  
-  .intro-text-container {
+}
+
+.intro-text-container {
     flex: 3;
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .hello-text {
+.hello-text {
     font-size: 4vw;
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -65,9 +44,9 @@
     margin-top: 2vw;
     margin-left: 2vw;
     display: inline-block
-  }
-  
-  .hello-text-small {
+}
+
+.hello-text-small {
     font-size: 2vw;
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -75,40 +54,52 @@
     margin-top: 1vw;
     margin-left: 2vw;
     max-width: 25vw;
-  }
+}
   
-  .landing-details {
+.landing-details {
     width: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .landing-details-text {
+.landing-details-text {
     font-size: 2vw;
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 0 auto;
     margin-top: 1vw;
     margin-left: 2vw;
-  }
+}
   
-  .landing-arrow-div {
+.landing-arrow-div {
     flex: 1;
     align-self: center;
-  }
+}
   
-  .resume-link {
+.resume-link {
     color: white
-  }
-  
-  .blue-white-blend {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255));
-    height: 10vh;
-    width: 100vw;
-    mix-blend-mode: normal;
-  }
-  
-  .smiley {
+}
+
+.smiley {
     letter-spacing: 0.15em;
-  }
+}
+
+.projects-landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 150vh;
+    background-color: #EDEDED;
+}
+
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25vh;
+}
