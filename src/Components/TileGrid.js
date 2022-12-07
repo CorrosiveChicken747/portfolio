@@ -38,7 +38,11 @@ export default function TileGrid(props){
             onClick={onClick}
             style={{ transform: animationDict.xys.interpolate(trans), backgroundImage: `url(${bg})`}}
             >
-                <h1>{title}</h1>
+              <div>
+                <div className="semicircle">
+                  <h2 className="centered-text white" style={{fontSize: "1.5vw"}}>{title}</h2>
+                </div>
+              </div>
             </animated.div>
             </div>
         );

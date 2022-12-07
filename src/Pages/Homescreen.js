@@ -10,10 +10,20 @@ import "react-awesome-button/dist/styles.css";
 import DownArrow from '../Components/DownArrow';
 import TileGrid from '../Components/TileGrid';
 
+import money_preview from '../Assets/img/musk-money_preview.webp';
+import redesign_preview from '../Assets/img/redesign_preview.jpg';
+import iterative_preview from '../Assets/img/iterative-design_preview.png';
+import rustc4_preview from '../Assets/img/rustc4_preview.png';
+
 export default function Homescreen() {
-    const description_text = "I'm a programmer, blah blah here is some powerful statement";
-    const website_speed_text = "I love efficiency and performance, so instead of using a template, I decided to build my own website from the ground up. Try it, it's fast.";
-    
+    const description_text = "I'm interested in low-level computing, security, and performance. I'm currently a Junior at Brown University studying Computer Science.";
+    const website_speed_text = "This is placeholder text, I'm not quite sure what to write here, so maybe some dashingly-smart UI/UX student will give me ideas. (Should there even be text here?)";
+    const linkedin = "https://www.linkedin.com/in/profjeffhuang";
+    const email_addr = "mailto:fake_email@brown.edu";
+    const github = "corrosive_chicken"; //unused rn
+    const source_code_link = "http://www.github.com";
+    const tiny_bottom_copyright = "Copyright 2022 Mona Lisa"
+
     const parallax = useRef(null);
 
     const scrollDown = () => {
@@ -25,29 +35,39 @@ export default function Homescreen() {
         const newUrl = currentUrl.replace(from, to);
         window.location = newUrl;
     }
+    
+    function redirect_offsite_to(url) {
+        window.open(url, '_blank').focus();
+    }
 
     const tiles = [
         {
-            title: 'Spend Musk\'s Money',
-            backgroundImage: null,
+            title: 'Development: Spend Musk\'s Money',
+            backgroundImage: money_preview,
             onClick: () => {
                 redirect_from_to("/home","/musk-money");
             }
         },
         {
-            title: 'Tile 2',
-            backgroundImage: null,
-            onClick: () => alert('Tile 2 clicked!')
+            title: 'Responsive Redesign: Berkshire Hathaway',
+            backgroundImage: redesign_preview,
+            onClick: () => {
+                redirect_offsite_to("https://corrosivechicken747.github.io/CS1300-ResponsiveRedesign/");
+            }
         },
         {
-            title: 'Tile 3',
-            backgroundImage: null,
-            onClick: () => alert('Tile 3 clicked!')
+            title: 'Iterative Design: Marathon Education',
+            backgroundImage: iterative_preview,
+            onClick: () => {
+                redirect_offsite_to("https://rockyraccoon111.github.io/uiux-assign4/");
+            }
         },
         {
-            title: 'Tile 4',
-            backgroundImage: null,
-            onClick: () => alert('Tile 4 clicked!')
+            title: 'Connect-4 in Rust',
+            backgroundImage: rustc4_preview,
+            onClick: () => {
+                //alert('Tile 3 clicked!')
+            }
         },
         
         // ...
@@ -63,7 +83,7 @@ export default function Homescreen() {
                                 <img src={profilepic} alt="Headshot of Oren Kohavi smiling" className="profilepic not-selectable"/>
                                 <div className="intro-text-container">
                                     <span>
-                                        <h1 className="hello-text">Hi, I'm Lisa</h1>
+                                        <h1 className="hello-text">Hi, I'm Mona</h1>
                                         <h1 className='hello-text tilt-hover smiley'>:)</h1>
                                     </span>
                                     <h2 className="hello-text-small">{description_text}</h2>
@@ -86,14 +106,16 @@ export default function Homescreen() {
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.1}>
                     <div className="projects-landing centered">
-                        <h1 className="centered">Making projects is cool, see all my projects here!</h1>
+                        <div className="vspace-pad"></div>
+                        <h1 className="centered">Check out my past projects:</h1>
                         <TileGrid tiles={tiles}/>
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={2.5} speed={0}>
+                <ParallaxLayer offset={2.55} speed={0}>
                 <div className="bottom-text white">
-                    <h2>This website was coded from scratch in React</h2>
-                    <span>Code is available </span> <a href="https://github.com/OrenKohavi/OrenKohavi.github.io">Here</a>
+                    <h2>find me on <a href={linkedin}>Linkedin</a> or send me an <a href={email_addr} >email</a></h2>
+                    <h3>This website is handmade, with sourcode available <a href={source_code_link}>Here</a></h3>
+                    <h6>{tiny_bottom_copyright}</h6>
                 </div>
                 </ParallaxLayer>
             </Parallax>

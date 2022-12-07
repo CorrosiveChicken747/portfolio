@@ -25,7 +25,7 @@
 }
   
 .profilepic {
-    width: 18vw;
+    height: 18vw;
     border-radius: 20%;
     flex: 1;
 }
@@ -40,7 +40,7 @@
     font-size: 4vw;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    margin: 0 auto;
+    margin: 0;
     margin-top: 2vw;
     margin-left: 2vw;
     display: inline-block
@@ -50,10 +50,9 @@
     font-size: 2vw;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    margin: 0 auto;
+    margin: 0;
     margin-top: 1vw;
     margin-left: 2vw;
-    max-width: 25vw;
 }
   
 .landing-details {
@@ -93,7 +92,7 @@
     margin-top: 10vh;
     margin-bottom: 10vh;
     height: 150vh;
-    background-color: #EDEDED;
+    background-color: #DEDEDE;
 }
 
 .bottom-text {

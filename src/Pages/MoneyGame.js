@@ -226,7 +226,7 @@ export default function MoneyGame() {
                 <div className="vspace"></div>
                 <h1>You've spent: ${money_str}</h1>
                 <div className="vspace"></div>
-                <h2>At minimum wage, earning this amount of money would take:</h2>
+                <h2>24/7 At minimum wage, earning this amount of money would take:</h2>
                 <h2>{seconds_to_time(min_wage_seconds)}</h2>
                 <div className="vspace"></div>
                 <h2>During the pandemic, Elon Musk made this amount of money in:</h2>

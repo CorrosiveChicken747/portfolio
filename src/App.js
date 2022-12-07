@@ -5,6 +5,7 @@ import RedirectHome from './Components/RedirectHome'
 import Homescreen from './Pages/Homescreen'
 import PageNotFound from './Pages/PageNotFound'
 import MoneyGame from './Pages/MoneyGame'
+import PersistentHomecorner from './Components/PersistentHomeCorner';
 
 function App() {
   const default_background = "#FFFFFF";
@@ -30,17 +31,28 @@ function App() {
     }
   }, [location, backgroundColorDict, default_background])
 
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
+  const navBarPages = useMemo(() => {
+    return [
+      "musk-money",
+    ]
+  }, [])
 
-  const handleMouseMove = (event) => {
-    setX(event.clientX);
-    setY(event.clientY);
-  };
+  const [show_navbar, set_show_navbar] = useState(false);
 
-  //<div onMouseMove={handleMouseMove}>
+  useEffect(() => {
+    let local_show_navbar = false;
+    for (const page of navBarPages) {
+      if (location.pathname.toLowerCase().includes(page)) {
+        local_show_navbar = true;
+      }
+    }
+    //alert("Determined that the navbar should be: " + local_show_navbar);
+    set_show_navbar(local_show_navbar);
+  }, [location, navBarPages])
+
   return (
     <div className="App">
+      <PersistentHomecorner show_self={show_navbar}/>
       <Routes>
         <Route path="/" element={<RedirectHome/>} />
         <Route path="/portfolio" element={<RedirectHome/>} />

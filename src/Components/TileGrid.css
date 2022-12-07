@@ -23,3 +23,11 @@
     width: 70vw;
     margin: auto;
 }
+
+.semicircle {
+    position: relative;
+    height: 5vw;
+    width: 100%;
+    border-radius: 0 0 100% 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
