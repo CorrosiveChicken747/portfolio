@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4a4facc2.css",
-    "main.js": "/portfolio/static/js/main.553a1d56.js",
+    "main.css": "/portfolio/static/css/main.33eec527.css",
+    "main.js": "/portfolio/static/js/main.59b17404.js",
     "static/media/lisa_headshot.png": "/portfolio/static/media/lisa_headshot.000874c5ceb57394a148.png",
     "static/media/bill.jpg": "/portfolio/static/media/bill.3dff15fe66aa445857b0.jpg",
     "static/media/hair.jpg": "/portfolio/static/media/hair.d9222b6acfa49f21bc0d.jpg",
@@ -21,13 +21,12 @@
     "static/media/redesign_preview.jpg": "/portfolio/static/media/redesign_preview.8624632f044917cde0bc.jpg",
     "static/media/placeholder.jpg": "/portfolio/static/media/placeholder.bc91dcb7793a52f6e44f.jpg",
     "static/media/movie.png": "/portfolio/static/media/movie.39ab86d89b141b418dd7.png",
-    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.4a4facc2.css.map": "/portfolio/static/css/main.4a4facc2.css.map",
-    "main.553a1d56.js.map": "/portfolio/static/js/main.553a1d56.js.map"
+    "main.33eec527.css.map": "/portfolio/static/css/main.33eec527.css.map",
+    "main.59b17404.js.map": "/portfolio/static/js/main.59b17404.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a4facc2.css",
-    "static/js/main.553a1d56.js"
+    "static/css/main.33eec527.css",
+    "static/js/main.59b17404.js"
   ]
 }
