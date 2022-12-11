@@ -5,7 +5,7 @@ import "react-awesome-button/dist/styles.css";
 
 export default function PersistentHomecorner(props) {
 
-    if (props.show_self == false) {
+    if (props.show_self === false) {
         return null;
     }
     //alert("Showin");

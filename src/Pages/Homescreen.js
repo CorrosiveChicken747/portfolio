@@ -1,9 +1,6 @@
 import './Homescreen.css';
 import '../global.css'
 import profilepic from '../Assets/img/lisa_headshot.png';
-import { Link } from 'react-router-dom';
-import {isMobile} from 'react-device-detect'
-import { AwesomeButton } from 'react-awesome-button';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { useRef } from 'react';
 import "react-awesome-button/dist/styles.css";
@@ -16,11 +13,9 @@ import iterative_preview from '../Assets/img/iterative-design_preview.png';
 import rustc4_preview from '../Assets/img/rustc4_preview.png';
 
 export default function Homescreen() {
-    const description_text = "I'm interested in low-level computing, security, and performance. I'm currently a Junior at Brown University studying Computer Science.";
-    const website_speed_text = "This is placeholder text, I'm not quite sure what to write here, so maybe some dashingly-smart UI/UX student will give me ideas. (Should there even be text here?)";
+    const website_description = "I'm determined to use technology to make the world a better place by highlighting inequities today, and intentionally designing for a better tomorrow.";
     const linkedin = "https://www.linkedin.com/in/profjeffhuang";
     const email_addr = "mailto:fake_email@brown.edu";
-    const github = "corrosive_chicken"; //unused rn
     const source_code_link = "http://www.github.com";
     const tiny_bottom_copyright = "Copyright 2022 Mona Lisa"
 
@@ -66,7 +61,7 @@ export default function Homescreen() {
             title: 'Connect-4 in Rust',
             backgroundImage: rustc4_preview,
             onClick: () => {
-                //alert('Tile 3 clicked!')
+                alert("This project isn't done yet, but it's coming soon!")
             }
         },
         
@@ -80,19 +75,33 @@ export default function Homescreen() {
                     <div className="landing">
                         <div className="landing-about">
                             <div className="landing-picture-hello">
-                                <img src={profilepic} alt="Headshot of Oren Kohavi smiling" className="profilepic not-selectable"/>
+                                <div className="profile-div">
+                                    <img src={profilepic} alt="Headshot of Mona Lisa smiling" className="profilepic not-selectable"/>
+                                </div>
                                 <div className="intro-text-container">
                                     <span>
                                         <h1 className="hello-text">Hi, I'm Mona</h1>
                                         <h1 className='hello-text tilt-hover smiley'>:)</h1>
                                     </span>
-                                    <h2 className="hello-text-small">{description_text}</h2>
+                                    <h2 className="hello-text-small">
+                                        <ul>
+                                            <li>
+                                                Junior at Brown University studying CS
+                                            </li>
+                                            <li>
+                                                Stong focus on privacy, security, and low-level performance
+                                            </li>
+                                            <li>
+                                                Real-world experience in collaborative environments
+                                            </li>
+                                        </ul>
+                                    </h2>
                                 </div>
                             </div>
                             <div className="landing-details">
                                 <br className='not-selectable'></br>
                                 <h2 className="landing-details-text">
-                                    {website_speed_text}
+                                    {website_description}
                                 </h2>
                             </div>
                             <div className="vspace"></div>
@@ -115,6 +124,7 @@ export default function Homescreen() {
                 <div className="bottom-text white">
                     <h2>find me on <a href={linkedin}>Linkedin</a> or send me an <a href={email_addr} >email</a></h2>
                     <h3>This website is handmade, with sourcode available <a href={source_code_link}>Here</a></h3>
+                    <h4 style={{margin: "0", marginTop: "-15px"}}>(Links will be replaced with real links once I deploy this on my personal github)</h4>
                     <h6>{tiny_bottom_copyright}</h6>
                 </div>
                 </ParallaxLayer>

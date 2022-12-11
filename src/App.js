@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { useEffect, useMemo, useState } from "react";
 import { Routes, Route, useLocation } from 'react-router-dom'
 import RedirectHome from './Components/RedirectHome'

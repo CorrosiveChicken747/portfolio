@@ -62,7 +62,6 @@ function reverse_price_sort(itemList){
 export default function Selection(props) {
     const items = props.items;  
     const add_to_cart = props.add_to_cart;
-    const sorting_functions = [alphabetical_sort, reverse_alphabetical_sort, price_sort, reverse_price_sort];
     const [sort_by, set_sort_by] = useState(0);
     const [filtered_items, set_filtered_items] = useState([]);
     const [active_filters, set_active_filters] = useState([]);
@@ -70,6 +69,7 @@ export default function Selection(props) {
 
     //set filtered items based on active_filters
     useEffect(() => {
+        const sorting_functions = [alphabetical_sort, reverse_alphabetical_sort, price_sort, reverse_price_sort];
         let new_filtered_items = [];
         if (active_filters.length === 0){
             new_filtered_items = sorting_functions[sort_by](items);
@@ -93,7 +93,7 @@ export default function Selection(props) {
         }
         new_filtered_items = sorting_functions[sort_by](new_filtered_items);
         set_filtered_items(new_filtered_items);
-    }, [active_filters, sort_by]);
+    }, [active_filters, sort_by, items]);
 
     //set true tags
     for (let i = 0; i < items.length; i++){

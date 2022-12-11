@@ -2,8 +2,6 @@ import "../../global.css"
 import placeholder_img from "../../Assets/img/placeholder.jpg";
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import { createTheme } from '@mui/material/styles';
-import { display } from "@mui/system";
 
 export default function ItemCard(props) {
     let img = props.img;

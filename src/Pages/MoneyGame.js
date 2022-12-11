@@ -22,7 +22,6 @@ import insulin_img from "../Assets/img/insulin.jpg"
 export default function MoneyGame() {
     const REMOVE_ONE_ITEM_ONLY = true;
 
-    const [total_money, set_total_money] = useState(0);
     const [money_str, set_money_str] = useState("0");
     const [min_wage_seconds, set_min_wage_seconds] = useState(0);
     const [musk_seconds, set_musk_seconds] = useState(0);
@@ -160,7 +159,6 @@ export default function MoneyGame() {
 
     const MIN_HOURLY_WAGE = 7.25;
     const MIN_SECOND_WAGE = MIN_HOURLY_WAGE / (60 * 60);
-    const MIN_HOURS_PER_DAY = 8;
     const MUSK_PANDEMIC_EARNINGS = 150000000000; // $150 billion (sources below)
     const DAYS_OF_PANDEMIC = 365 * 2; //Pandemic is 2 years long (2020 & 2021)
     const MUSK_HOURS_PER_DAY = 24; //Musk earns money when he sleeps, so it's more fair to say he 'works' 24h a day
@@ -181,11 +179,10 @@ export default function MoneyGame() {
         for (let i = 0; i < cart.length; i++) {
             sum += cart[i].cost;
         }
-        set_total_money(sum);
         set_money_str(sum.toLocaleString());
         set_min_wage_seconds(Math.round(sum / MIN_SECOND_WAGE));
         set_musk_seconds(Math.round(sum / MUSK_SECOND_WAGE));
-    }, [cart]);
+    }, [cart, MIN_SECOND_WAGE, MUSK_SECOND_WAGE]);
 
     function seconds_to_time(seconds) {
         const years = Math.floor(seconds / (60 * 60 * 24 * 365));
@@ -208,9 +205,9 @@ export default function MoneyGame() {
         if (minutes > 0) {
             return `${minutes}m ${seconds_left}s`;
         } else {
-            if (seconds_left == 0) {
+            if (seconds_left === 0) {
                 return "0 seconds"
-            } else if (seconds_left == 1) {
+            } else if (seconds_left === 1) {
                 return "1 second"
             } else {
             return `${seconds_left} seconds`;
